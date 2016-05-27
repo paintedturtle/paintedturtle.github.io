@@ -23,7 +23,8 @@ body.landscape #guitars article {
 
 #sold h2 { text-align: center;}
 
-#windows { margin:50px 0 auto; overflow:hidden; position:relative; background:#444; border: 25px solid #444;}
+#windows {  overflow:hidden; position:relative; background:#444; border: 25px solid #444; width: auto;}
+#windows .layout { margin:50px 0 auto; }
 #windows h2 { margin: 0 auto;}
 a.window { display:block; float:left; overflow:hidden; box-shadow: 0px 0px 10px black; position:relative; }
 a.window { transform: scale(0.88); transition: all 222ms; }
