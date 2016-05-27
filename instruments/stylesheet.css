@@ -36,7 +36,7 @@ pre { display: block; white-space: pre-wrap; margin: 25px auto; padding: 0; box-
 
 body > #root { text-align: center; padding: 25px;}
 
-body > article > header { text-align: center;}
+body > article > header { text-align: center; padding: 0 25px 25px;}
 
 h2 { opacity: 0.5; margin: 75px auto 0; max-width: 960px;}
 
@@ -44,3 +44,14 @@ h2 { opacity: 0.5; margin: 75px auto 0; max-width: 960px;}
 
 figure { overflow:hidden; position: relative; display:block;  margin:auto; }
 figure > img { position: relative; display: block; width:100%; }
+
+#cover { overflow:hidden; position: relative; }
+#cover div.price { position: absolute; top: -0.88em; left: +0.88em; transform: rotate(-3deg);}
+
+div.price { height: 3.3em; width: 3.3em; line-height: 3.3em; border-radius: 10em; vertical-align: bottom; text-align: center; font-size: 444%; letter-spacing: -0.2ex; overflow:hidden; box-shadow: 0 0 10px black;}
+div.price * {vertical-align: middle;}
+div.price big a { font-size: 44%; font-weight: 200; opacity: 0.44;}
+div.price big b { font-weight: 600; letter-spacing: -0.2ex; position:relative; top: 0.22ex;}
+div.price small { line-height: 33%; font-size: 44%; font-weight: 200; opacity: 0.44; letter-spacing: -0.1ex; margin-left: 0.22ex; }
+div.price small a { font-size: 0%; }
+div.price small b { text-decoration: underline; }
