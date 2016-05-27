@@ -10,9 +10,6 @@
 
 <style type="text/css" media="screen">
 
-pre { padding: 25px; margin: 0; white-space: pre-wrap;}
-
-h2 { opacity: 0.33; margin: 75px auto 0; max-width: 960px;}
 
 body > header { padding: 25px; text-align: center; margin:auto; max-width: 960px; height: 100px; box-sizing: border-box;}
 
@@ -35,15 +32,18 @@ article header .price small { display:inline-block; position: absolute; left: 80
 article header .price small b { border-bottom: 2px solid; font-weight: bold; opacity: 0.5; margin-left: -0.33ex;}
 article a[href] { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display:block;}
 
-#sold { background:url(/instruments/deepblue.svg); overflow:visible; padding: 0 0 50px; margin: auto;}
+#sold { background:url(/instruments/deepblue.svg); overflow:visible; padding: 0 0 50px; margin: 50px auto 0;}
 
-#sold > header { background:repeat-x top url(/instruments/waves.svg); height: 50px; top: -50px; position:relative;}
+#sold > header { background:repeat-x top url(/instruments/waves.svg); height: 50px; top: -50px; position:relative; margin-bottom: 25px;}
+#sold .date { font-size: 50%;}
+#sold .date:nth-of-type(odd) { transform:rotate(-2.22deg)translate(0px,-13px); }
+#sold .date:nth-of-type(even) { transform:rotate(+2.22deg); }
 #sold > header h2 { position: relative; top: 75px; }
 
-article.sold { margin: auto; max-width: 960px; height: 300px; padding: 0 0 0 33%; border-top: 2px solid hsla(360, 100%, 100%, 0.1); box-sizing: border-box;}
+article.sold { margin: auto; max-width: 960px; height: 300px; border-top: 2px solid hsla(360, 100%, 100%, 0.1); box-sizing: border-box;  transition: opacity 333ms linear; opacity: 0.55;}
+article.sold:hover { opacity: 1;}
+article.sold pre { margin-left: 33%; }
 article.sold img {width: 33%; height:100%; object-fit: cover; position:absolute; left: 0; top:0; }
-article.sold:nth-child(odd) { transform: scale(0.9)rotate(+1.11deg); }
-article.sold:nth-child(even) { transform: scale(0.9)rotate(-1.11deg); }
 
 body.landscape article.forsale { transform:scale(0.8)rotate(+2deg); transition: all ease-in 111ms;}
 body.landscape article.forsale:hover { transition: all ease-out 111ms; z-index:1;}
@@ -52,9 +52,9 @@ body.landscape article.forsale:nth-child(odd):hover { transform:scale(1)rotate(-
 body.landscape article.forsale:nth-child(even) { transform:scale(0.8)rotate(+2.22deg)translate(-50px,0px); transform-origin: center;}
 body.landscape article.forsale:nth-child(even):hover { transform:scale(1)rotate(+1deg)translate(-25px,0px); }
 
-section pre { max-width: 960px; margin:auto;}
+/*section pre { max-width: 960px; margin:auto;}*/
 
-#contact, #prices { text-align: center;}
+#prices { text-align: center;}
 
 </style>
 
@@ -103,65 +103,65 @@ section pre { max-width: 960px; margin:auto;}
 </article>
 </section>
 
-<section id="contact">
-<pre>
-Please <a href="mailto:instruments@paintedturtle.xyz" style="color:hsl(50,88%,72%); text-decoration:underline;">write us</a> if you have any questions.
-</pre>
-</section>
-
 <section id="prices">
 <pre>
+Please <a href="mailto:instruments@paintedturtle.xyz" style="color:hsl(50,88%,72%); text-decoration:underline;">write us</a> if you have any questions.
+
 Prices are in Canadian Dollars and they include all applicable taxes. We prefer cash but we also accept Paypal and Bitcoin payments. We don’t ship instruments but we may be able to deliver them if you live in central Ottawa.
 </pre>
 </section>
 
 <section id="sold">
-<header><h2>Sold!</h2></header>
+<header><h2>Sales History</h2></header>
 
+<h2 class="date">May 25 2016</h2>
 
-<article class="sold">
+<article class="sold" style="transform: scale(0.9)rotate(-2.22deg)translate(0px,-13px);">
 <pre>
 Audio-Technica AT2020 USB
 
 Large diaphram condensor microphone with integrated analog to digital converter and USB connection. Included USB cable, small table-top stand and standard mic stand mount.
 
-Sold for $88 on May 25 2016.
+Sold for $88
 </pre>
 <img src="AT2020/L1010081.jpg" alt="">
 </article>
 
+<h2 class="date">May 20 2016</h2>
 
-<article class="sold">
+<article class="sold" style="transform: scale(0.9)rotate(+2.22deg);">
 <pre>
 Stage One 3/4 Size Stratocaster
 
 Adorable and very fun to play. Subdued moave-pink-purple shimmer. Packaged with original vibrato bar and toolkit.
 
-<div>Sold for $111 on May 20 2016.</div>
+<div>Sold for $111</div>
 </pre>
 <img src="UN0002/L1010121.jpg" alt="">
 </article>
 
+<h2 class="date">May 18 2016</h2>
 
-<article class="sold">
+<article class="sold" style="transform: scale(0.9)rotate(-1.11deg)translate(0px,-13px);">
 <pre>
 Mystery Microphone
 
 Handheld dynamic microphone of unknown origin with reliable XLR connection and unreliable wireless connection. Included XLR to 1/4" cable, wireless transmitter, wireless receiver and instructions.
 
-<div>Sold for $8 on May 18 2016.</div>
+<div>Sold for $8</div>
 </pre>
 <img src="mysterymicrophone/IMG_0023.JPG" alt="">
 </article>
 
+<h2 class="date">May 17 2016</h2>
 
-<article class="sold">
+<article class="sold" style="transform: scale(0.9)rotate(+3.33deg);">
 <pre>
 Small Acoustic Guitar Case
 
 Not a hard case and not a soft case — something inbetween. Fits a classical guitar or small acoustic. Clean, functional and light-weight.
 
-<div>Sold for $9 on May 17 2016.</div>
+<div>Sold for $9</div>
 </pre>
 <img src="Smallish-Softish-Acoustic-Guitar-Case/IMG_0046.JPG" alt="">
 </article>
