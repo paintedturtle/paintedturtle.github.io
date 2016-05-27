@@ -1,5 +1,5 @@
 remotes:
-	git remote add paintedturtle.xyz core@paintedturtle.xyz:spaces/paintedturtle.site.git
+	git remote add paintedturtle.xyz core@paintedturtle.xyz:spaces/paintedturtle.xyz.git
 	git remote add paintedturtle.github.io git@github.com:paintedturtle/paintedturtle.github.io.git
 
 nodes:
