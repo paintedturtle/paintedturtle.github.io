@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Painted Turtle Instruments</title>
+<link rel="stylesheet" href="/instruments/stylesheet.css" media="screen" charset="utf-8">
+<script src="/instruments/window.js" charset="utf-8"></script>
+<script src="/instruments/document.js" charset="utf-8"></script>
+<script src="/instruments/body.js" charset="utf-8"></script>
+<script src="/instruments/guitar.js" charset="utf-8"></script>
+
+
+<style type="text/css" media="screen">
+
+
+body > header { padding: 25px; text-align: center; margin:auto; max-width: 960px; height: 100px; box-sizing: border-box;}
+
+section { margin:0; position: relative; padding: 0; overflow:hidden; }
+article { margin:0; position: relative; padding: 0; overflow:hidden;  }
+
+article.forsale {box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.33);}
+
+article img { width: 100%; display:block;}
+article header { position:absolute; top: 0; left: 0; right: 0; bottom: 0; margin:0; text-align:center;}
+article header .model { position:absolute; left: 0; right:0; bottom: 20px; color: black; }
+article header .price { position:absolute; background: hsl(180, 88%, 29%); color: white; border-radius: 150px; height: 150px; width:150px; line-height:150px; left: 30px; top: -30px; box-shadow: 0px 0px 3px black; transform: rotate(-3deg);}
+article header .price a { opacity:0.5; }
+
+article header .price big { display:inline-block; margin: 11px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; text-align:center;}
+article header .price big a { font-weight: bold; font-size: 88%; position: absolute; right: 100%; top: -10px; margin-right:-0.88ex; }
+article header .price big b { font-weight: bold; font-size: 222%; letter-spacing: -0.15ex; margin-left: -0.66ex;}
+
+article header .price small { display:inline-block; position: absolute; left: 80%; letter-spacing: -0.25ex; margin-left: -0.55ex;}
+article header .price small b { border-bottom: 2px solid; font-weight: bold; opacity: 0.5; margin-left: -0.33ex;}
+article a[href] { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display:block;}
+
+#sold { background:url(/instruments/deepblue.svg); overflow:visible; padding: 0 0 50px; margin: 50px auto 0;}
+
+#sold > header { background:repeat-x top url(/instruments/waves.svg); height: 50px; top: -50px; position:relative; margin-bottom: 25px;}
+#sold .date { font-size: 50%;}
+#sold .date:nth-of-type(odd) { transform:rotate(-2.22deg)translate(0px,-13px); }
+#sold .date:nth-of-type(even) { transform:rotate(+2.22deg); }
+#sold > header h2 { position: relative; top: 75px; }
+
+article.sold { margin: auto; max-width: 960px; height: 300px; border-top: 2px solid hsla(360, 100%, 100%, 0.1); box-sizing: border-box;  transition: opacity 333ms linear; opacity: 0.55;}
+article.sold:hover { opacity: 1;}
+article.sold pre { margin-left: 33%; }
+article.sold img {width: 33%; height:100%; object-fit: cover; position:absolute; left: 0; top:0; }
+
+body.landscape article.forsale { transform:scale(0.8)rotate(+2deg); transition: all ease-in 111ms;}
+body.landscape article.forsale:hover { transition: all ease-out 111ms; z-index:1;}
+body.landscape article.forsale:nth-child(odd)  { transform:scale(0.8)rotate(-2.22deg)translate(+50px,0px); transform-origin: center;}
+body.landscape article.forsale:nth-child(odd):hover { transform:scale(1)rotate(-1deg)translate(+25px,0px); }
+body.landscape article.forsale:nth-child(even) { transform:scale(0.8)rotate(+2.22deg)translate(-50px,0px); transform-origin: center;}
+body.landscape article.forsale:nth-child(even):hover { transform:scale(1)rotate(+1deg)translate(-25px,0px); }
+
+/*section pre { max-width: 960px; margin:auto;}*/
+
+#prices { text-align: center;}
+
+</style>
+
+<header>
+<h1 style="color:hsl(333,88%,72%);">Painted Turtle Instruments</h1>
+<div><abbr title="lefty, gauchère">Left-handed</abbr> and <abbr title="shorty, 3/4 scale, mini">short-scale</abbr> guitars in Ottawa</div>
+<div><a href="mailto:instruments@paintedturtle.xyz" style="color:hsl(50,88%,72%); text-decoration:underline;">instruments@paintedturtle.xyz</a></div>
+</header>
+
+<section id="guitars">
+
+<article class="forsale">
+<header>
+<div class="model">Epiphone G-310 (LH)</div>
+<div class="price" style="background:hsl(212, 66%, 29%);"><big><a>$</a><b>333</b></big><small><a>.</a><b>00</b></small></div>
+</header>
+<img src="instruments/1006130382/cover.jpg" alt="Black body, rosewood fingerboard, three-ply black-white-black pickguard, chrome hardware, with hardshell case.">
+<a href="instruments/1006130382/"></a>
+</article>
+
+<article class="forsale">
+<header>
+<div class="model">SX Precision Bass</div>
+<div class="price" style="background:hsl(177, 66%, 29%);"><big><a>$</a><b>222</b></big><small><a>.</a><b>00</b></small></div>
+</header>
+<img src="instruments/SX001/L1010143.jpg" alt="Black body, rosewood fingerboard, tortoise shell pickguard, chrome hardware, with hardshell case.">
+<a href="instruments/SX001/"></a>
+</article>
+
+</section>
+
+<section id="misc" hidden>
+<article class="forsale" style="transform: rotate(-1deg);">
+<header>
+<div class="model">Roland Cube 15</div>
+<div class="price" style="background:hsl(270, 33%, 30%);"><big><a>$</a><b>66</b></big><small><a>.</a><b>00</b></small></div>
+</header>
+<img src="GT61760/IMG_0022.JPG" alt="Photograph">
+</article>
+<article class="forsale" style="transform: rotate(-1deg);">
+<header>
+<div class="model">Little Tikes Piano</div>
+<div class="price" style="background:hsl(270, 33%, 30%);"><big><a>$</a><b>3</b></big><small><a>.</a><b>00</b></small></div>
+</header>
+<img src="instruments/L48H131/L1010122.jpg" alt="Photograph">
+</article>
+</section>
+
+<section id="prices">
+<pre>
+Please <a href="mailto:instruments@paintedturtle.xyz" style="color:hsl(50,88%,72%); text-decoration:underline;">write us</a> if you have any questions.
+
+Prices are in Canadian Dollars and they include all applicable taxes. We prefer cash but we also accept Paypal and Bitcoin payments. We don’t ship instruments but we may be able to deliver them if you live in central Ottawa.
+</pre>
+</section>
+
+<section id="sold">
+<header><h2>Sales History</h2></header>
+
+<h2 class="date">May 25 2016</h2>
+
+<article class="sold" style="transform: scale(0.9)rotate(-2.22deg)translate(0px,-13px);">
+<pre>
+Audio-Technica AT2020 USB
+
+Large diaphram condensor microphone with integrated analog to digital converter and USB connection. Included USB cable, small table-top stand and standard mic stand mount.
+
+Sold for $88
+</pre>
+<img src="instruments/AT2020/L1010081.jpg" alt="">
+</article>
+
+<h2 class="date">May 20 2016</h2>
+
+<article class="sold" style="transform: scale(0.9)rotate(+2.22deg);">
+<pre>
+Stage One Mini Stratocaster
+
+Adorable and very fun to play. Subdued moave-pink-purple shimmer. Packaged with original vibrato bar and toolkit.
+
+<div>Sold for $111</div>
+</pre>
+<img src="instruments/UN0002/L1010121.jpg" alt="">
+</article>
+
+<h2 class="date">May 18 2016</h2>
+
+<article class="sold" style="transform: scale(0.9)rotate(-1.11deg)translate(0px,-13px);">
+<pre>
+Mystery Microphone
+
+Handheld dynamic microphone of unknown origin with reliable XLR connection and unreliable wireless connection. Included XLR to 1/4" cable, wireless transmitter, wireless receiver and instructions.
+
+<div>Sold for $8</div>
+</pre>
+<img src="instruments/mysterymicrophone/IMG_0023.JPG" alt="">
+</article>
+
+<h2 class="date">May 17 2016</h2>
+
+<article class="sold" style="transform: scale(0.9)rotate(+3.33deg);">
+<pre>
+Small Acoustic Guitar Case
+
+Not a hard case and not a soft case — something inbetween. Fits a classical guitar or small acoustic. Clean, functional and light-weight.
+
+<div>Sold for $9</div>
+</pre>
+<img src="instruments/Smallish-Softish-Acoustic-Guitar-Case/IMG_0046.JPG" alt="">
+</article>
+
+
+</section>
