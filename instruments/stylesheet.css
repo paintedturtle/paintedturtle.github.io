@@ -1,0 +1,46 @@
+a, b, strong, h1, h2, address { color: inherit; font-style:inherit; font:inherit; font-weight: inherit; text-decoration: inherit; margin: 0; }
+body { background: hsla(180, 2%, 19%, 1); color: hsla(0, 0%, 100%, 0.88); margin: 0; padding:0;}
+body, pre { font: 21px/25px "AvenirNext-Medium", "Consolas", "Courier New", monospace; }
+
+/*html { background: hsla(180, 2%, 11%, 1); }*/
+body {  }
+
+body > article { max-width: 1600px; margin: auto; }
+
+
+#guitars article { float:left; }
+
+#misc article:only-child { width:44%; margin:auto; }
+#misc article { width:50%; float:left; }
+
+body.portrait #guitars article {
+  width: 100%;
+}
+
+body.landscape #guitars article {
+  width: 50%;
+}
+
+#sold h2 { text-align: center;}
+
+#windows { margin:50px 0 auto; overflow:hidden; position:relative; background:#444; border: 25px solid #444;}
+#windows h2 { margin: 0 auto;}
+a.window { display:block; float:left; overflow:hidden; box-shadow: 0px 0px 10px black; position:relative; }
+a.window { transform: scale(0.88); transition: all 222ms; }
+a.window:hover { transform: scale(1.00); }
+a.window img { width: 100%; }
+
+pre { display: block; white-space: pre-wrap; margin: 25px auto; padding: 0; box-sizing: border-box; max-width: 960px; }
+
+#appointment a[href] { text-decoration: underline; color: hsla(160, 66%, 66%, 1);}
+
+body > #root { text-align: center; padding: 25px;}
+
+body > article > header { text-align: center;}
+
+h2 { opacity: 0.5; margin: 75px auto 0; max-width: 960px;}
+
+#floorturtle { max-width: 960px; margin: auto;}
+
+figure { overflow:hidden; position: relative; display:block;  margin:auto; }
+figure > img { position: relative; display: block; width:100%; }
