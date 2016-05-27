@@ -5,7 +5,7 @@ body, pre { font: 21px/25px "AvenirNext-Medium", "Consolas", "Courier New", mono
 /*html { background: hsla(180, 2%, 11%, 1); }*/
 body {  }
 
-h2 { opacity: 0.5; margin:auto; max-width: 960px; padding: 25px 25px 0; }
+h2 { opacity: 0.5; margin:auto; max-width: 960px; padding: 25px 25px 0; box-sizing: border-box; }
 
 
 body > article { max-width: 1600px; margin: auto; }
@@ -24,7 +24,7 @@ body.landscape #guitars article {
   width: 50%;
 }
 
-#sold h2 { text-align: center;}
+
 
 #windows {  overflow:hidden; position:relative; background:#444; border: 25px solid #444; width: auto;}
 #windows .layout { margin:50px 0 auto; }
@@ -60,3 +60,5 @@ div.price big b { font-weight: 700; letter-spacing: -0.2ex; position:relative; t
 div.price small { line-height: 33%; font-size: 44%; font-weight: 200; opacity: 0.44; letter-spacing: -0.1ex; margin-left: 0.22ex; }
 div.price small a { font-size: 0%; }
 div.price small b { text-decoration: underline; }
+
+#sold h2 { text-align: center;}
