@@ -10,49 +10,38 @@
 
 <style type="text/css" media="screen">
 
-
 body > header { padding: 25px; text-align: center; margin:auto; max-width: 960px; height: 100px; box-sizing: border-box;}
 
-section { margin:0; position: relative; padding: 0; overflow:hidden; }
-article { margin:0; position: relative; padding: 0; overflow:hidden;  }
-
 article.forsale {box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.33);}
+article.forsale .price { top: -0.6em; left: 0.3em; }
+body.portrait  article.forsale .price { height: 3.3em; width: 3.3em; line-height: 3.3em; font-size: 444%; }
+body.landscape article.forsale .price.d1 { height: 2.2em; width: 2.2em; line-height: 2.0em; top: -0.44em; font-size: 333%; transform: rotate(-1deg); }
+body.landscape article.forsale .price.d2 { height: 2.6em; width: 2.6em; line-height: 2.5em; top: -0.66em; font-size: 333%; transform: rotate(-3deg); }
+body.landscape article.forsale .price.d3 { height: 3.2em; width: 3.2em; line-height: 3.2em; top: -0.88em; font-size: 333%; transform: rotate(-3deg); }
+article.forsale a[href] { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display:block;}
 
 article img { width: 100%; display:block;}
 article header { position:absolute; top: 0; left: 0; right: 0; bottom: 0; margin:0; text-align:center;}
 article header .model { position:absolute; left: 0; right:0; bottom: 20px; color: black; }
-article header .price { position:absolute; background: hsl(180, 88%, 29%); color: white; border-radius: 150px; height: 150px; width:150px; line-height:150px; left: 30px; top: -30px; box-shadow: 0px 0px 3px black; transform: rotate(-3deg);}
-article header .price a { opacity:0.5; }
+/*article header .price { position:absolute; background: hsl(180, 88%, 29%); color: white; border-radius: 150px; height: 150px; width:150px; line-height:150px; left: 30px; top: -30px; box-shadow: 0px 0px 3px black; transform: rotate(-3deg);}
 
-article header .price big { display:inline-block; margin: 11px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; text-align:center;}
+
+/*article header .price big { display:inline-block; margin: 11px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; text-align:center;}
 article header .price big a { font-weight: bold; font-size: 88%; position: absolute; right: 100%; top: -10px; margin-right:-0.88ex; }
-article header .price big b { font-weight: bold; font-size: 222%; letter-spacing: -0.15ex; margin-left: -0.66ex;}
+article header .price big b { font-weight: bold; font-size: 222%; letter-spacing: -0.15ex; margin-left: -0.66ex;}*/
 
-article header .price small { display:inline-block; position: absolute; left: 80%; letter-spacing: -0.25ex; margin-left: -0.55ex;}
-article header .price small b { border-bottom: 2px solid; font-weight: bold; opacity: 0.5; margin-left: -0.33ex;}
-article a[href] { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display:block;}
+/*article header .price small { display:inline-block; position: absolute; left: 80%; letter-spacing: -0.25ex; margin-left: -0.55ex;}
+article header .price small b { border-bottom: 2px solid; font-weight: bold; opacity: 0.5; margin-left: -0.33ex;}*/
 
-#sold { background:url(/instruments/deepblue.svg); overflow:visible; padding: 0 0 50px; margin: 50px auto 0;}
 
-#sold > header { background:repeat-x top url(/instruments/waves.svg); height: 50px; top: -50px; position:relative; margin-bottom: 25px;}
-#sold .date { font-size: 50%;}
-#sold .date:nth-of-type(odd) { transform:rotate(-2.22deg)translate(0px,-13px); }
-#sold .date:nth-of-type(even) { transform:rotate(+2.22deg); }
-#sold > header h2 { position: relative; top: 75px; }
 
-article.sold { margin: auto; max-width: 960px; height: 300px; border-top: 2px solid hsla(360, 100%, 100%, 0.1); box-sizing: border-box;  transition: opacity 333ms linear; opacity: 0.55;}
-article.sold:hover { opacity: 1;}
-article.sold pre { margin-left: 33%; }
-article.sold img {width: 33%; height:100%; object-fit: cover; position:absolute; left: 0; top:0; }
+body.landscape #guitars article.forsale { transform:scale(0.8)rotate(+2deg); transition: all ease-in 155ms;}
+body.landscape #guitars article.forsale:hover { transition: all ease-out 155ms; z-index:1;}
+body.landscape #guitars article.forsale:nth-child(odd)  { transform:scale(0.8)rotate(-2.22deg)translate(+50px,0px); transform-origin: center;}
+body.landscape #guitars article.forsale:nth-child(odd):hover { transform:scale(1)rotate(-1deg)translate(+25px,0px); }
+body.landscape #guitars article.forsale:nth-child(even) { transform:scale(0.8)rotate(+2.22deg)translate(-50px,0px); transform-origin: center;}
+body.landscape #guitars article.forsale:nth-child(even):hover { transform:scale(1)rotate(+1deg)translate(-25px,0px); }
 
-body.landscape article.forsale { transform:scale(0.8)rotate(+2deg); transition: all ease-in 111ms;}
-body.landscape article.forsale:hover { transition: all ease-out 111ms; z-index:1;}
-body.landscape article.forsale:nth-child(odd)  { transform:scale(0.8)rotate(-2.22deg)translate(+50px,0px); transform-origin: center;}
-body.landscape article.forsale:nth-child(odd):hover { transform:scale(1)rotate(-1deg)translate(+25px,0px); }
-body.landscape article.forsale:nth-child(even) { transform:scale(0.8)rotate(+2.22deg)translate(-50px,0px); transform-origin: center;}
-body.landscape article.forsale:nth-child(even):hover { transform:scale(1)rotate(+1deg)translate(-25px,0px); }
-
-#prices { text-align: center;}
 
 </style>
 
@@ -67,7 +56,7 @@ body.landscape article.forsale:nth-child(even):hover { transform:scale(1)rotate(
 <article class="forsale">
 <header>
 <div class="model">Epiphone G-310 (LH)</div>
-<div class="price" style="background:hsl(212, 66%, 29%);"><big><a>$</a><b>333</b></big><small><a>.</a><b>00</b></small></div>
+<div class="price d3" style="background:hsl(212, 66%, 29%);"><big><a>$</a><b>333</b></big><small><a>.</a><b>00</b></small></div>
 </header>
 <img src="instruments/1006130382/cover.jpg" alt="Black body, rosewood fingerboard, three-ply black-white-black pickguard, chrome hardware, with hardshell case.">
 <a href="instruments/1006130382"></a>
@@ -76,29 +65,39 @@ body.landscape article.forsale:nth-child(even):hover { transform:scale(1)rotate(
 <article class="forsale">
 <header>
 <div class="model">SX Precision Bass</div>
-<div class="price" style="background:hsl(177, 66%, 29%);"><big><a>$</a><b>222</b></big><small><a>.</a><b>00</b></small></div>
+<div class="price d3" style="background:hsl(177, 66%, 29%);"><big><a>$</a><b>222</b></big><small><a>.</a><b>00</b></small></div>
 </header>
-<img src="instruments/SX001/L1010143.jpg" alt="Black body, rosewood fingerboard, tortoise shell pickguard, chrome hardware, with hardshell case.">
+<img src="instruments/SX001/cover.jpg" alt="Black body, rosewood fingerboard, tortoise shell pickguard, chrome hardware, with hardshell case.">
 <a href="instruments/SX001"></a>
 </article>
 
 </section>
 
-<section id="misc" hidden>
-<article class="forsale" style="transform: rotate(-1deg);">
+<section id="misc">
+
+<!-- <article class="forsale">
+<header>
+<div class="model">Six Felt Picks</div>
+<div class="price d1" style="background:hsl(270, 33%, 30%);"><big><a>$</a><b>6</b></big><small><a>.</a><b>00</b></small></div>
+</header>
+<img src="instruments/FeltPicks.jpg" alt="Photograph">
+</article> -->
+<article class="forsale">
 <header>
 <div class="model">Roland Cube 15</div>
-<div class="price" style="background:hsl(270, 33%, 30%);"><big><a>$</a><b>66</b></big><small><a>.</a><b>00</b></small></div>
+<div class="price d2" style="background:hsl(270, 33%, 30%);"><big><a>$</a><b>66</b></big><small><a>.</a><b>00</b></small></div>
 </header>
-<img src="GT61760/IMG_0022.JPG" alt="Photograph">
+<img src="instruments/GT61760/IMG_0016.JPG" alt="Photograph">
+<a href="instruments/GT61760"></a>
 </article>
-<article class="forsale" style="transform: rotate(-1deg);">
+<!-- <article class="forsale">
 <header>
-<div class="model">Little Tikes Piano</div>
-<div class="price" style="background:hsl(270, 33%, 30%);"><big><a>$</a><b>3</b></big><small><a>.</a><b>00</b></small></div>
+<div class="model">Little Tikes Baby Grand Piano</div>
+<div class="price d1" style="background:hsl(270, 33%, 30%);"><big><a>$</a><b>3</b></big><small><a>.</a><b>00</b></small></div>
 </header>
 <img src="instruments/L48H131/L1010122.jpg" alt="Photograph">
-</article>
+</article> -->
+
 </section>
 
 <section id="prices">

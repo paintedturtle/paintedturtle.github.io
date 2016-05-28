@@ -2,29 +2,34 @@ a, b, strong, h1, h2, address { color: inherit; font-style:inherit; font:inherit
 body { background: hsla(180, 2%, 19%, 1); color: hsla(0, 0%, 100%, 0.88); margin: 0; padding:0;}
 body, pre { font: 21px/25px "AvenirNext-Medium", "Consolas", "Courier New", monospace; }
 
-/*html { background: hsla(180, 2%, 11%, 1); }*/
-body {  }
-
-h2 { opacity: 0.5; margin:auto; max-width: 960px; padding: 25px 25px 0; box-sizing: border-box; }
-
+body > #root { text-align: center; padding: 25px;}
 
 body > article { max-width: 1600px; margin: auto; }
 
+body > article > header { text-align: center; padding: 0 25px 25px;}
+
+
+section { margin:0; position: relative; padding: 0; overflow:hidden; }
+article { margin:0; position: relative; padding: 0; overflow:hidden;  }
+
+h2 { opacity: 0.5; margin:auto; max-width: 960px; padding: 25px 25px 0; box-sizing: border-box; }
+
+pre { display: block; white-space: pre-wrap; margin:auto; padding: 25px; box-sizing: border-box; max-width: 960px; }
+
+figure { overflow:hidden; position: relative; display:block; margin:auto; }
+figure > img { position: relative; display: block; width:100%; float:left; }
 
 #guitars article { float:left; }
+body.portrait #guitars article { width: 100%; }
+body.landscape #guitars article { width: 50%; }
 
-#misc article:only-child { width:44%; margin:auto; }
-#misc article { width:50%; float:left; }
+#misc { margin-top: -25px;}
+#misc article { float:left; }
 
-body.portrait #guitars article {
-  width: 100%;
-}
-
-body.landscape #guitars article {
-  width: 50%;
-}
-
-
+body.portrait #misc article { width: 100%; }
+/*body.landscape #misc article { width: 33.3%; }*/
+body.landscape #misc article.forsale:only-child { width: 33.3%; margin:auto; float:none; transform: scale(0.88); transition: all 111ms ease-in; }
+body.landscape #misc article.forsale:only-child:hover { transform: scale(1); transition: all 111ms ease-out;}
 
 #windows {  overflow:hidden; position:relative; background:#444; border: 25px solid #444; width: auto;}
 #windows .layout { margin:50px 0 auto; }
@@ -34,26 +39,16 @@ a.window { transform: scale(0.88); transition: all 222ms; }
 a.window:hover { transform: scale(1.00); }
 a.window img { width: 100%; }
 
-pre { display: block; white-space: pre-wrap; margin:auto; padding: 25px; box-sizing: border-box; max-width: 960px; }
 
-#appointment a[href] { text-decoration: underline; color: hsla(160, 66%, 66%, 1);}
-
-body > #root { text-align: center; padding: 25px;}
-
-body > article > header { text-align: center; padding: 0 25px 25px;}
-
-
-
-#floorturtle { max-width: 960px; margin: auto;}
-
-figure { overflow:hidden; position: relative; display:block;  margin:auto; }
-figure > img { position: relative; display: block; width:100%; }
 
 
 #cover { overflow:hidden; position: relative; }
 #cover div.price { position: absolute; top: -0.88em; left: +0.88em; transform: rotate(-3deg);}
 
-div.price { height: 3.3em; width: 3.3em; line-height: 3.3em; border-radius: 10em; vertical-align: bottom; text-align: center; font-size: 444%; letter-spacing: -0.2ex; overflow:hidden; box-shadow: 0 0 10px black;}
+article div.price { position: absolute; border-radius: 10em; vertical-align: bottom; text-align: center; overflow:hidden; box-shadow: 0 0 10px black; letter-spacing: -0.2ex;}
+
+div.price { height: 3.3em; width: 3.3em; line-height: 3.3em; font-size: 444%;  }
+
 div.price * {vertical-align: middle;}
 div.price big a { font-size: 44%; font-weight: 200; opacity: 0.44;}
 div.price big b { font-weight: 700; letter-spacing: -0.2ex; position:relative; top: 0.22ex;}
@@ -62,3 +57,17 @@ div.price small a { font-size: 0%; }
 div.price small b { text-decoration: underline; }
 
 #sold h2 { text-align: center;}
+
+#sold { background:url(/instruments/deepblue.svg); overflow:visible; padding: 0 0 50px; margin: 50px auto 0;}
+#sold > header { background:repeat-x top url(/instruments/waves.svg); height: 50px; top: -50px; position:relative; margin-bottom: 25px;}
+#sold .date { font-size: 50%;}
+#sold .date:nth-of-type(odd) { transform:rotate(-2.22deg)translate(0px,-13px); }
+#sold .date:nth-of-type(even) { transform:rotate(+2.22deg); }
+#sold > header h2 { position: relative; top: 75px; }
+
+article.sold { margin: auto; max-width: 960px; height: 300px; border-top: 2px solid hsla(360, 100%, 100%, 0.1); box-sizing: border-box;  transition: opacity 333ms linear; opacity: 0.55;}
+article.sold:hover { opacity: 1;}
+article.sold pre { margin-left: 33%; }
+article.sold img {width: 33%; height:100%; object-fit: cover; position:absolute; left: 0; top:0; }
+
+#prices { text-align: center;}
