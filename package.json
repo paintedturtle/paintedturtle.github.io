@@ -1,0 +1,14 @@
+{
+  "name": "paintedturtle.xyz",
+  "version": "0.0.0",
+  "description": "Website for Painted Turtle Instruments",
+  "main": "instruments.html",
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  },
+  "scripts": {
+    "start": "coffee --watch --compile **/*.coffee"
+  },
+  "author": "La toture peinte",
+  "license": "Unlicense"
+}

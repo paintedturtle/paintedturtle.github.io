@@ -17,3 +17,9 @@ document.on = (eventname, selector, procedure) ->
 
 document.on "DOMContentLoaded", ->
   console.info "document object model is ready":performance.now()
+
+document.on "DOMContentLoaded", ->
+  document.query("a[href]").forEach (hyperlink) ->
+    if hyperlink.href.toString().match("http:")
+      hyperlink.setAttribute "href", hyperlink.href.toString() + ".html"
+      console.info hyperlink.href

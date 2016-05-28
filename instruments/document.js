@@ -31,4 +31,13 @@
     });
   });
 
+  document.on("DOMContentLoaded", function() {
+    return document.query("a[href]").forEach(function(hyperlink) {
+      if (hyperlink.href.toString().match("http:")) {
+        hyperlink.setAttribute("href", hyperlink.href.toString() + ".html");
+        return console.info(hyperlink.href);
+      }
+    });
+  });
+
 }).call(this);
