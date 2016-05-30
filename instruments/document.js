@@ -33,7 +33,7 @@
 
   document.on("DOMContentLoaded", function() {
     return document.query("a[href]").forEach(function(hyperlink) {
-      if (hyperlink.href.toString().match("http:")) {
+      if (hyperlink.href.toString().match("http://paintedturtle")) {
         hyperlink.setAttribute("href", hyperlink.href.toString() + ".html");
         return console.info(hyperlink.href);
       }

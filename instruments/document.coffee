@@ -20,6 +20,6 @@ document.on "DOMContentLoaded", ->
 
 document.on "DOMContentLoaded", ->
   document.query("a[href]").forEach (hyperlink) ->
-    if hyperlink.href.toString().match("http:")
+    if hyperlink.href.toString().match("http://paintedturtle")
       hyperlink.setAttribute "href", hyperlink.href.toString() + ".html"
       console.info hyperlink.href
