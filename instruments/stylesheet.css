@@ -1,4 +1,4 @@
-a, b, strong, h1, h2, address { color: inherit; font-style:inherit; font:inherit; font-weight: inherit; text-decoration: inherit; margin: 0; }
+a, b, strong, h1, h2, h3, h4, address, figure { color: inherit; font-style:inherit; font:inherit; font-weight: inherit; text-decoration: inherit; margin: 0; }
 body { background: hsla(180, 2%, 19%, 1); color: hsla(0, 0%, 100%, 0.88); margin: 0; padding:0;}
 body, pre { font: 21px/25px "AvenirNext-Medium", "Consolas", "Courier New", monospace; }
 
@@ -33,12 +33,27 @@ body.portrait #misc article { width: 100%; }
 body.landscape #misc article.forsale:only-child { width: 33.3%; margin:auto; float:none; transform: scale(0.88); transition: all 111ms ease-in; }
 body.landscape #misc article.forsale:only-child:hover { transform: scale(1); transition: all 111ms ease-out;}
 
-#windows {  overflow:hidden; position:relative; background:#444; border: 25px solid #444; width: auto;}
-#windows .layout { margin:50px 0 auto; }
-#windows h2 { margin: 0 auto;}
-a.window { display:block; float:left; overflow:hidden; box-shadow: 0px 0px 10px black; position:relative; }
+#information.windows {background:#444; }
+#comparison.windows {background:#444; }
+
+div.windows { padding: 15px 50px; overflow:hidden; position:relative; width: auto; }
+div.windows div.layout { margin:auto; }
+div.windows h2 { margin: 10px auto; color: hsla(0, 0%, 100%, 0.33); text-align: center;}
+
+#remotes h2 { font-size: 0; line-height: 0;}
+#remotes h3 { margin: 0 auto; color: hsla(0, 0%, 100%, 0.33);}
+
+a.window { display:block; float:left; overflow:hidden; box-shadow: 0px 0px 10px black; position:relative; border-top: 5px solid hsl(0, 0%, 55%);}
 a.window { transform: scale(0.88); transition: all 222ms; }
-a.window:hover { transform: scale(1.00); }
+
+/*#remotes a.window:first-of-type { transform-origin: left bottom;}*/
+#remotes { padding: 25px 50px;}
+#remotes a.window { transform-origin: top center;}
+
+#remotes figure { float:left; width: 50%; text-align: center;}
+#remotes figure > a[href].window { width: 100%; max-width: auto;}
+
+a.window:hover { transform: scale(0.99); }
 a.window img { width: 100%; }
 
 
