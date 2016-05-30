@@ -2,6 +2,8 @@ a, b, strong, h1, h2, address { color: inherit; font-style:inherit; font:inherit
 body { background: hsla(180, 2%, 19%, 1); color: hsla(0, 0%, 100%, 0.88); margin: 0; padding:0;}
 body, pre { font: 21px/25px "AvenirNext-Medium", "Consolas", "Courier New", monospace; }
 
+html { min-width: 900px; }
+
 body > #root { text-align: center; padding: 25px;}
 
 body > article { max-width: 1600px; margin: auto; }
