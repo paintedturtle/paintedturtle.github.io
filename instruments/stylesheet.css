@@ -4,7 +4,8 @@ body, pre { font: 21px/25px "AvenirNext-Medium", "Consolas", "Courier New", mono
 
 html { min-width: 900px; }
 
-body > #root { text-align: center; padding: 25px;}
+body > header { text-align: center; padding: 25px; }
+body > footer { text-align: center; padding: 25px; }
 
 body > article { max-width: 1600px; margin: auto; }
 
