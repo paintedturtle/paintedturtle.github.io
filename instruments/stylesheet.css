@@ -26,20 +26,18 @@ figure > img { position: relative; display: block; width:100%; float:left; }
 #parts article { float:left; }
 body.portrait #guitars article { width: 100%; }
 body.landscape #guitars article { width: 50%; }
-body.landscape #parts article { width: 50%; }
+body.landscape #parts article { width: 33.3333%; }
 
-#misc { margin-top: -25px;}
+#misc { margin-top: -50px;}
 #misc article { float:left; }
 
 body.portrait #misc article { width: 100%; }
 /*body.landscape #misc article { width: 33.3%; }*/
-body.landscape #misc article.forsale:only-child { width: 33.3%; margin:auto; float:none; transform: scale(0.88); transition: all 111ms ease-in; }
-body.landscape #misc article.forsale:only-child:hover { transform: scale(1); transition: all 111ms ease-out;}
+body.landscape #misc article.forsale:only-child { width: 50%; margin:auto; float:none; transform: scale(0.77)rotate(-2deg); transition: all 111ms ease-in; }
+body.landscape #misc article.forsale:only-child:hover { transform: scale(0.88)rotate(+2deg); transition: all 111ms ease-out;}
 
-body.landscape #parts article:nth-of-type(odd)  { transform: scale(0.77); transition: all 111ms ease-in; }
-body.landscape #parts article:nth-of-type(even) { transform: scale(0.77); transition: all 111ms ease-in; }
-
-body.landscape #parts article.out-of-stock { opacity: 0.33;}
+/*body.landscape #parts article:nth-of-type(odd)  { transform: scale(0.77); transition: all 111ms ease-in; }
+body.landscape #parts article:nth-of-type(even) { transform: scale(0.77); transition: all 111ms ease-in; }*/
 
 #information.windows {background:#444; }
 #comparison.windows {background:#444; }
@@ -96,3 +94,5 @@ article.sold pre { margin-left: 33%; }
 article.sold img {width: 33%; height:100%; object-fit: cover; position:absolute; left: 0; top:0; }
 
 #prices { text-align: center;}
+
+#summary pre a[href] {color:hsl(50,88%,72%); text-decoration:underline;}
