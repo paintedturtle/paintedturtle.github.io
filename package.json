@@ -10,5 +10,8 @@
     "start": "coffee --watch --compile **/*.coffee"
   },
   "author": "La toture peinte",
-  "license": "Unlicense"
+  "license": "Unlicense",
+  "dependencies": {
+    "d3": "^3.5.17"
+  }
 }

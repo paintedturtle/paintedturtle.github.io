@@ -29,3 +29,9 @@ pow:
 
 unlink_pow:
 	rm -rf ~/.pow/paintedturtle
+
+d3.min.js: node_modules/d3/d3.min.js
+	cp node_modules/d3/d3.min.js d3.min.js
+
+scripts: d3.min.js
+	coffee --watch --compile **/*.coffee
