@@ -50,3 +50,11 @@ window.instruments.push
   "function": "Electric Guitar"
   "price": 288
   "cost": 160
+
+window.instruments.push
+  "dexterity": "Lefty"
+  "make": "Epiphone"
+  "model": "G-310"
+  "function": "Electric Guitar"
+  "price": 288
+  "cost": 160
