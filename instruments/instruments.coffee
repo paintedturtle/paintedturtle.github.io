@@ -8,6 +8,7 @@ window.instruments.push
   "function": "Guitar Amplifier"
   "year": 2004
   "price": 44
+  "cost": 30
   "output": "15 watts"
   "summary": """
     A reliable and good sounding 15 watt guitar amplifier.
@@ -24,3 +25,28 @@ window.instruments.push
 
     Please <a href="mailto:instruments@paintedturtle.xyz">send us a note</a> if you have any questions or to schedule a time to play it.
   """
+
+window.instruments.push
+  "make": "Peavey"
+  "model": "Rage 158"
+  "function": "Guitar Amplifier"
+  "price": 55
+  "cost": 15
+  "output": "15 watts"
+
+window.instruments.push
+  "make": "Aria"
+  "model": "AB-30"
+  "function": "Bass Guitar Amplifier"
+  "year": 1987
+  "price": 55
+  "cost": 35
+  "output": "30 watts"
+
+window.instruments.push
+  "dexterity": "Lefty"
+  "make": "Epiphone"
+  "model": "G-310"
+  "function": "Electric Guitar"
+  "price": 288
+  "cost": 160
