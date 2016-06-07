@@ -12,7 +12,7 @@ window.instruments.push
   "summary": """
     A reliable and good sounding 15 watt guitar amplifier.
 
-    It has two channels: a clean channel and a distortion channel. The distortion channel has a pre-gain and post-gain controls so that you can dial in the amount of distortion that you want at a comfortable volume.
+    It has two channels: a clean channel and a distortion channel. The distortion channel has pre-gain and post-gain controls so that you can dial in the amount of distortion that you want at a comfortable volume.
 
     Three band EQ (bass, middle, treble) with modern and vintage modes. We usually keep it on the vintage mode but it is always nice to have sonic options at your fingertips.
 

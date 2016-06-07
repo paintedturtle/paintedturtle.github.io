@@ -27,3 +27,10 @@ renderInstrumentPage = (params) ->
 
   summary = d3.select("body > article").append("div").attr(id:"summary")
   summary.append("pre").html instrument.summary
+
+footer = """
+Send us a message if you have any questions or to arrange a time to check it out. We are located in Little Italy a few blocks from the corner of Preston & Somerset. We are usually available weekday afternoons and evenings — let us know what might work best for you.
+
+Painted Turtle Instruments
+https://paintedturtle.xyz/instruments
+"""
