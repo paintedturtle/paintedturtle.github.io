@@ -84,8 +84,8 @@ div.price small b { text-decoration: underline; }
 #sold { background:url(/instruments/deepblue.svg); overflow:visible; padding: 0 0 50px; margin: 50px auto 0;}
 #sold > header { background:repeat-x top url(/instruments/waves.svg); height: 50px; top: -50px; position:relative; margin-bottom: 25px;}
 #sold .date { font-size: 50%;}
-#sold .date:nth-of-type(odd) { transform:rotate(-2.22deg)translate(0px,-13px); }
-#sold .date:nth-of-type(even) { transform:rotate(+2.22deg); }
+#sold .date:nth-of-type(even) { transform:rotate(-2.22deg)translate(0px,-13px); }
+#sold .date:nth-of-type(odd) { transform:rotate(+2.22deg); }
 #sold > header h2 { position: relative; top: 75px; }
 
 article.sold { margin: auto; max-width: 960px; height: 300px; border-top: 2px solid hsla(360, 100%, 100%, 0.1); box-sizing: border-box;  transition: opacity 333ms linear; opacity: 0.55;}
