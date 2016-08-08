@@ -1,101 +1,80 @@
 a, b, strong, h1, h2, h3, h4, address, figure { color: inherit; font-style:inherit; font:inherit; font-weight: inherit; text-decoration: inherit; margin: 0; }
-body { background: hsla(180, 2%, 19%, 1); color: hsla(0, 0%, 100%, 0.88); margin: 0; padding:0;}
 body, pre { font: 21px/25px "AvenirNext-Medium", "Consolas", "Courier New", monospace; }
+section, article { margin:0; position: relative; padding: 0; }
+h2 { opacity: 0.5; margin:auto; max-width: 750px; padding: 25px 25px 0; box-sizing: border-box; }
+pre { display: block; white-space: pre-wrap; margin:auto; padding: 25px; box-sizing: border-box; max-width: 750px; }
 
-html { min-width: 900px; }
-
-body > header { text-align: center; padding: 25px; background: hsla(180, 2%, 25%, 1);}
-body > footer { text-align: center; padding: 25px; }
-
-body > header > h1 { color:hsl(333,88%,72%);}
-body > header > .mail { opacity:0.5; color:inherit; }
-body > header > .mail a[href] { color:inherit; }
-
-body:not(.root) > header { transition: all linear 222ms;}
-body:not(.root) > header .slogan { transition: all linear 222ms;}
-
-body:not(.root) > header { margin-bottom: 25px; overflow:hidden; position: relative;}
-
-body:not(.root) > header .waves { background: repeat-x bottom center url(/instruments/header.background.blue.png); position: absolute; bottom: 0; left: 0; width:100%; height: 25px;}
-body:not(.root) > header .slogan { margin-top: 25px; opacity:0.5; color:inherit; }
-body:not(.root) > header { height: 25px; padding-bottom: 25px;  }
-body:not(.root) > header:hover { height: 75px;  }
-body:not(.root) > header:hover .slogan { margin-top: 0px; opacity:0.5; color:inherit; }
-
-body > article { max-width: 1600px; margin: auto; }
-
-body > article > header { text-align: center; padding: 0 25px 25px;}
+body { background: hsla(180, 2%, 19%, 1); color: hsla(0, 0%, 100%, 0.88); margin: 0; padding:0;}
 
 
-section { margin:0; position: relative; padding: 0; overflow:hidden; }
-article { margin:0; position: relative; padding: 0; overflow:hidden;  }
 
-h2 { opacity: 0.5; margin:auto; max-width: 850px; padding: 25px 25px 0; box-sizing: border-box; }
+/* Index */
 
-pre { display: block; white-space: pre-wrap; margin:auto; padding: 25px; box-sizing: border-box; max-width: 850px; }
-
-figure { overflow:hidden; position: relative; display:block; margin:auto; }
-figure > img { position: relative; display: block; width:100%; float:left; }
-
-/*#guitars article { float:left; }*/
+#prices { text-align: center; }
+#amplifiers, #parts { overflow:hidden; }
+#guitars.solo    article { margin: auto; transform:scale(0.93) rotate(+2deg);}
+#amplifiers.solo article { margin: auto; transform:scale(0.93) rotate(-2deg);}
+#parts { padding: 25px 0; }
 #parts article { float:left; }
-/*body.portrait #guitars article { width: 100%; }*/
-/*body.landscape #guitars article { width: 50%; }*/
-body.landscape #parts article { width: 50%; }
+body.landscape #parts article { width: 33.3%; }
 
-#misc { margin-top: -50px;}
-#misc article { float:left; }
+body.portrait  #guitars.solo article { width: 88%; }
+body.landscape #guitars.solo article { width: 66%;  }
 
-body.portrait #misc article { width: 100%; }
-/*body.landscape #misc article { width: 33.3%; }*/
-body.landscape #misc article.forsale:only-child { width: 50%; margin:auto; float:none; transform: scale(0.77)rotate(-2deg); transition: all 111ms ease-in; }
-body.landscape #misc article.forsale:only-child:hover { transform: scale(0.88)rotate(+2deg); transition: all 111ms ease-out;}
 
-/*body.landscape #parts article:nth-of-type(odd)  { transform: scale(0.77); transition: all 111ms ease-in; }
-body.landscape #parts article:nth-of-type(even) { transform: scale(0.77); transition: all 111ms ease-in; }*/
-
-#information.windows {background:#444; }
-#comparison.windows {background:#444; }
-
-div.windows { padding: 15px 50px; overflow:hidden; position:relative; width: auto; }
-div.windows div.layout { margin:auto; }
-div.windows h2 { margin: 10px auto; color: hsla(0, 0%, 100%, 0.33); text-align: center;}
-
-#remotes h2 { font-size: 0; line-height: 0;}
-#remotes h3 { margin: 0 auto; color: hsla(0, 0%, 100%, 0.33);}
-
-a.window { display:block; float:left; overflow:hidden; box-shadow: 0px 0px 10px black; position:relative; border-top: 9px solid hsl(0, 0%, 66%); border-top-left-radius: 3px; border-top-right-radius: 3px;}
-a.window { transform: scale(0.88); transition: all 222ms; }
-
-/*#remotes a.window:first-of-type { transform-origin: left bottom;}*/
-#remotes { padding: 25px 50px;}
-#remotes a.window { transform-origin: top center;}
-
-#remotes figure { float:left; width: 50%; text-align: center;}
-#remotes figure > a[href].window { width: 100%; max-width: auto;}
-
-a.window:hover { transform: scale(0.99); }
-a.window img { width: 100%; }
+body.portrait  #amplifiers.solo article { width: 88%; }
+body.landscape #amplifiers.solo article { width: 50%;  }
 
 
 
+/* Article */
 
-#cover { overflow:hidden; position: relative; }
+body > article { max-width: 1400px; margin: auto; }
+body > article > header { text-align: center; padding: 0 25px 25px;}
+body > article #summary pre a[href] {color:hsl(50,88%,72%); text-decoration:underline;}
+
+/* Article Advertisement */
+
+article.forsale {box-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.33);}
+article.forsale a[href] { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display:block;}
+article.forsale img { width: 100%; display:block;}
+article.forsale header { position:absolute; top: 0; left: 0; right: 0; bottom: 0; margin:0; text-align:center;}
+article.forsale > header .model { position:absolute; left: 0; right:0; bottom: 5%; color: black; }
+
+
+/* Price Tags */
+
+
+#cover img.price { position: absolute; top: -2.5%; left: 8%; width: 20%; display:block; transform: rotate(-3deg); }
+
+article.forsale > header img.price { position: absolute; top: -6%; left: 3%; width: 33%; display:block; transform: rotate(-3deg); }
+
+#guitars article.forsale > header img.price { top: -2.5%; left: 8%; width: 20%; }
+
+/*#cover { overflow:hidden; position: relative; }
 #cover div.price { position: absolute; top: -0.88em; left: +0.88em; transform: rotate(-3deg);}
 
-article div.price { position: absolute; border-radius: 10em; vertical-align: bottom; text-align: center; overflow:hidden; box-shadow: 0 0 10px black; letter-spacing: -0.2ex;}
+div.price { position: absolute; border-radius: 10em; vertical-align: bottom; text-align: center; overflow:hidden; box-shadow: 0 0 10px black; letter-spacing: -0.2ex;}
 
-div.price { height: 3.3em; width: 3.3em; line-height: 3.3em; font-size: 444%;  }
+article.forsale .price { top: -0.6em; left: 0.3em; }
+
+body.portrait  article.forsale .price { height: 3.3em; width: 3.3em; line-height: 3.3em; font-size: 444%; }
+body.landscape article.forsale .price.d1 { height: 2em; width: 2em; line-height: 1.8em; top: -1ex; font-size: 300%; transform: rotate(-2deg); }
+body.landscape article.forsale .price.d2 { height: 2em; width: 2em; line-height: 1.8em; top: -1ex; font-size: 300%; transform: rotate(-3deg); }
+body.landscape article.forsale .price.d3 { height: 3.2em; width: 3.2em; line-height: 3.2em; top: -1ex; font-size: 300%; transform: rotate(-3deg); }
 
 div.price * {vertical-align: middle;}
 div.price big a { font-size: 44%; font-weight: 200; opacity: 0.44;}
-div.price big b { font-weight: 700; letter-spacing: -0.2ex; position:relative; top: 0.22ex;}
-div.price small { line-height: 33%; font-size: 44%; font-weight: 200; opacity: 0.44; letter-spacing: -0.1ex; margin-left: 0.22ex; }
+div.price big b { font-weight: 700; letter-spacing: -0.3ex; position:relative; top: 0.22ex;}
+div.price big b.n11 { letter-spacing: -0.5ex; margin-left: -0.1ex; margin-right: +0.1ex; }
+div.price big b.n13 { letter-spacing: -0.4ex; margin-left: -0.1ex; margin-right: +0.1ex; }
+div.price small { line-height: 33%; font-size: 44%; font-weight: 200; opacity: 0.44; letter-spacing: -0.1ex; margin-left: 0.2ex; }
 div.price small a { font-size: 0%; }
-div.price small b { text-decoration: underline; }
+div.price small b { text-decoration: underline; }*/
+
+/* Sales History */
 
 #sold h2 { text-align: center;}
-
 #sold { background:url(/instruments/deepblue.svg); overflow:visible; padding: 0 0 50px; margin: 50px auto 0;}
 #sold > header { background:repeat-x top url(/instruments/waves.svg); height: 50px; top: -50px; position:relative; margin-bottom: 25px;}
 #sold .date { font-size: 50%;}
@@ -108,6 +87,46 @@ article.sold:hover { opacity: 1;}
 article.sold pre { margin-left: 33%; }
 article.sold img {width: 33%; height:100%; object-fit: cover; position:absolute; left: 0; top:0; }
 
-#prices { text-align: center;}
+/* Windows */
 
-#summary pre a[href] {color:hsl(50,88%,72%); text-decoration:underline;}
+a.window:hover { transform: scale(0.99); }
+a.window img { width: 100%; }
+
+a.window { display:block; float:left; overflow:hidden; box-shadow: 0px 0px 10px black; position:relative; border-top: 9px solid hsl(0, 0%, 66%); border-top-left-radius: 3px; border-top-right-radius: 3px;}
+a.window { transform: scale(0.88); transition: all 222ms; }
+
+#information.windows {background:#444; }
+#comparison.windows {background:#444; }
+
+div.windows { padding: 15px 50px; overflow:hidden; position:relative; width: auto; }
+div.windows div.layout { margin:auto; }
+div.windows h2 { margin: 10px auto; color: hsla(0, 0%, 100%, 0.33); text-align: center;}
+
+#remotes { padding: 25px 50px;}
+#remotes h2 { font-size: 0; line-height: 0;}
+#remotes h3 { margin: 0 auto; color: hsla(0, 0%, 100%, 0.33);}
+#remotes a.window { transform-origin: top center;}
+#remotes figure { float:left; width: 50%; text-align: center;}
+#remotes figure > a[href].window { width: 100%; max-width: auto;}
+
+/* Header and Footer */
+
+body > header { text-align: center; padding: 25px; background: hsla(180, 2%, 25%, 1);}
+body > footer { text-align: center; padding: 25px; }
+body > header > h1 { color:hsl(333,88%,72%);}
+body:not(.root) > header > .mail { opacity:0.5; color:inherit; }
+body:not(.root) > header > .mail a[href] { color:inherit; }
+body > header .waves { background: repeat-x bottom center url(/instruments/header.background.blue.png); position: absolute; bottom: 0; left: 0; width:100%; height: 25px;}
+body:not(.root) > header { transition: all linear 222ms;}
+body:not(.root) > header .slogan { transition: all linear 222ms;}
+body > header { margin-bottom: 25px; overflow:hidden; position: relative;}
+body:not(.root) > header .slogan { margin-top: 25px; opacity:0.5; color:inherit; }
+body:not(.root) > header { height: 25px; padding-bottom: 25px;  }
+body:not(.root) > header:hover { height: 75px;  }
+body:not(.root) > header:hover .slogan { margin-top: 0px; opacity:0.5; color:inherit; }
+
+/* Figures */
+
+figure { overflow:hidden; position: relative; display:block; margin:auto; }
+figure > img { position: relative; display: block; width:100%; float:left; }
+figure.duo > img { width:50%; }

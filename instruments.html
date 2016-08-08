@@ -10,118 +10,105 @@
 <script src="/instruments/body.js" charset="utf-8"></script>
 <script src="/instruments/guitar.js" charset="utf-8"></script>
 
-
-<style type="text/css" media="screen">
-
-article.forsale {box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.33);}
-article.forsale .price { top: -0.6em; left: 0.3em; }
-body.portrait  article.forsale .price { height: 3.3em; width: 3.3em; line-height: 3.3em; font-size: 444%; }
-body.landscape article.forsale .price.d1 { height: 2.2em; width: 2.2em; line-height: 2.0em; top: -0.44em; font-size: 333%; transform: rotate(-1deg); }
-body.landscape article.forsale .price.d2 { height: 2.6em; width: 2.6em; line-height: 2.5em; top: -0.66em; font-size: 333%; transform: rotate(-3deg); }
-body.landscape article.forsale .price.d3 { height: 3.2em; width: 3.2em; line-height: 3.2em; top: -0.88em; font-size: 333%; transform: rotate(-3deg); }
-article.forsale a[href] { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display:block;}
-
-article img { width: 100%; display:block;}
-article header { position:absolute; top: 0; left: 0; right: 0; bottom: 0; margin:0; text-align:center;}
-article header .model { position:absolute; left: 0; right:0; bottom: 10px; color: black; }
-
-/*body.landscape #guitars article.forsale { transform:scale(0.8)rotate(+2deg); transition: all ease-in 155ms;}
-body.landscape #guitars article.forsale:hover { transition: all ease-out 155ms; z-index:1;}
-body.landscape #guitars article.forsale:nth-child(odd)  { transform:scale(0.78)rotate(-2.22deg)translate(+50px,0px); transform-origin: center;}
-body.landscape #guitars article.forsale:nth-child(odd):hover { transform:scale(0.96)rotate(-1deg)translate(+25px,0px); }
-body.landscape #guitars article.forsale:nth-child(even) { transform:scale(0.78)rotate(+2.22deg)translate(-50px,0px); transform-origin: center;}
-body.landscape #guitars article.forsale:nth-child(even):hover { transform:scale(0.96)rotate(+1deg)translate(-25px,0px); }*/
-
-</style>
-
 <title>🎈🐢 🎹 🎸 🔊 🎤 🎺 🎵 ☜ Painted Turtle Instruments ☞ 🎵 🎺 🎤 🔊 🎸 🎹 🐢 ⛱</title>
 
 <body class="root">
 
 <header>
-<h1 style="color:hsl(333,88%,72%);">Painted Turtle Instruments</h1>
-<div>Well worn <abbr title="lefty, gauchère">left handed</abbr> guitars in Ottawa</div>
-<div><a href="mailto:instruments@paintedturtle.xyz" style="color:hsl(50,88%,72%); text-decoration:underline;">instruments@paintedturtle.xyz</a></div>
+<h1 class="name"><a href="/instruments">Painted Turtle Instruments</a></h1>
+<div class="slogan">Well worn <abbr title="lefty, gauchère">left handed</abbr> guitars in Ottawa</div>
+<div class="mail"><a href="mailto:instruments@paintedturtle.xyz" style="color:hsl(50,88%,72%); text-decoration:underline;">instruments@paintedturtle.xyz</a></div>
+<div class="waves"></div>
 </header>
 
-<section id="guitars">
 
+<section id="guitars" class="solo">
 <article class="forsale">
 <header>
 <div class="model">Lefty Epiphone SG</div>
-<div class="price d3" style="background:hsl(212, 66%, 29%);"><big><a>$</a><b>333</b></big><small><a>.</a><b>00</b></small></div>
+<img src="/price.tags/$333.deepblue.svg" alt="$333" class="price tag">
 </header>
 <img src="instruments/1006130382/cover.jpg" alt="Black body, rosewood fingerboard, three-ply black-white-black pickguard, chrome hardware, with hardshell case.">
 <a href="instruments/1006130382"></a>
 </article>
-
-
 </section>
 
-<!-- <section id="misc">
-<article class="forsale">
-<header>
-<div class="model" style="color: hsla(0, 0%, 88%, 0.88)">Aria AB-30 Bass Amp</div>
-<div class="price d2" style="background:hsl(270, 33%, 30%);"><big><a>$</a><b>55</b></big><small><a>.</a><b>00</b></small></div>
-</header>
-<img src="/instruments/87080276/photo.0.jpg" alt="Front-side view of Aria AB-30 Bass Amplifier">
-<a href="instruments/87080276"></a>
-</article>
-</section> -->
-
 <section id="parts">
-<!-- <article class="forsale">
-<header>
-<div class="model">Fender Frontman 15R</div>
-<div class="price d2" style="background:hsl(141, 55%, 30%);"><big><a>$</a><b>77</b></big><small><a>.</a><b>00</b></small></div>
-</header>
-<img src="/instruments/CAX09I1557/photo.0.jpg" alt="Photo">
-<a href="/instruments/CAX09I1557"></a>
-</article> -->
+  <article class="forsale">
+  <header>
+  <div class="model">Plastic Nut for Lefty Bass Guitar</div>
+  <img src="/price.tags/$1.red.svg" alt="$1" class="price tag">
+  </header>
+  <img src="/instruments/NUTLB01/overview.jpg" alt="Photograph">
+  <a href="/instruments/NUTLB01"></a>
+  </article>
 
-<article class="forsale">
-<header>
-<div class="model">Bouquet of Four Felt Picks</div>
-<div class="price d1" style="background:hsl(333, 55%, 30%);"><big><a>$</a><b>3</b></big><small><a>.</a><b>00</b></small></div>
-</header>
-<img src="/instruments/4FELTPICKS/photo.3.jpg" alt="Photo">
-<a href="/instruments/4FELTPICKS"></a>
-</article>
+  <article class="forsale">
+  <header>
+  <div class="model">Bouquet of Four Felt Picks</div>
+  <img src="/price.tags/$3.purple.svg" alt="$3" class="price tag">
+  </header>
+  <img src="/instruments/4FELTPICKS/photo.3.jpg" alt="Photo">
+  <a href="/instruments/4FELTPICKS"></a>
+  </article>
 
-<article class="forsale">
-<header>
-<div class="model">Plastic Nut for Lefty Bass Guitar</div>
-<div class="price d1" style="background:hsl(333, 55%, 30%);"><big><a>$</a><b>1</b></big><small><a>.</a><b>00</b></small></div>
-</header>
-<img src="/instruments/NUTLB01/overview.jpg" alt="Photograph">
-<a href="/instruments/NUTLB01"></a>
-</article>
+  <article class="forsale">
+  <header>
+  <div class="model">Lefty 250K Potentiometer</div>
+  <img src="/price.tags/$11.orange.svg" alt="$11" class="price tag">
+  </header>
+  <img src="/instruments/EP4385L/underview.jpg" alt="Photograph">
+  <a href="/instruments/EP4385L"></a>
+  </article>
 
-<!-- <article class="forsale">
-<header>
-<div class="model">Lefty 250K Potentiometer</div>
-<div class="price d1" style="background:hsl(25, 88%, 40%);"><big><a>$</a><b>9</b></big><small><a>.</a><b>00</b></small></div>
-</header>
-<img src="/instruments/EP4385L/cover.jpg" alt="Photograph">
-<a href="/instruments/EP4385L"></a>
-</article> -->
-<!-- <article class="forsale">
-<header>
-<div class="model" style="color: hsla(0, 0%, 88%, 0.88)">Black Leather Strap</div>
-<div class="price d2" style="background:hsl(270, 33%, 30%);"><big><a>$</a><b>11</b></big><small><a>.</a><b>00</b></small></div>
-</header>
-<img src="/instruments/DM1SGF-BLK/cover.jpg" alt="Photograph">
-<a href="/instruments/DM1SGF-BLK"></a>
-</article> -->
+  <article class="forsale">
+  <header>
+  <div class="model">Lefty 500K Potentiometer</div>
+  <img src="/price.tags/$11.orange.svg" alt="$11" class="price tag">
+  </header>
+  <img src="/instruments/EP0086L/underview.jpg" alt="Photograph">
+  <a href="/instruments/EP0086L"></a>
+  </article>
+
+  <!-- <article class="forsale">
+  <header>
+  <div class="model">Lefty Vibrato Arm with White tip</div>
+  <img src="/price.tags/$13.oceanblue.svg" alt="$13" class="price tag">
+  </header>
+  <img src="/instruments/0074655000/detail.tip.jpg" alt="Photograph">
+  <a href="/instruments/0074655000"></a>
+  </article>
+
+  <article class="forsale">
+  <header>
+  <div class="model">Lefty Vibrato Arm with Parchment tip</div>
+  <img src="/price.tags/$13.oceanblue.svg" alt="$13" class="price tag">
+  </header>
+  <img src="/instruments/0077488000/detail.tip.jpg" alt="Photograph">
+  <a href="/instruments/0077488000"></a>
+  </article> -->
 </section>
 
 <section id="prices">
 <pre>
-Please <a href="mailto:instruments@paintedturtle.xyz" style="color:hsl(50,88%,72%); text-decoration:underline;">write us</a> if you have any questions.
+Our prices are in Canadian Dollars and they include all applicable taxes.
 
-Prices are in Canadian Dollars and they include all applicable taxes. We prefer cash but we also accept PayPal and Bitcoin payments. We don’t ship instruments but we may be able to deliver them if you live in central Ottawa.
+<a href="mailto:instruments@paintedturtle.xyz" style="color:hsl(50,88%,72%); text-decoration:underline;">Write us</a> if you have any questions or to arrange a time to drop by.
 </pre>
 </section>
+
+<section id="amplifiers" class="solo">
+<article class="forsale">
+<header>
+<div class="model" style="color:white;">Yorkville AM50</div>
+<img src="/price.tags/$111.green.svg" alt="$111" class="price tag">
+</header>
+<img src="/instruments/5050709/photo.0.jpg" alt="Photo">
+<a href="/instruments/5050709"></a>
+</article>
+</section>
+
+
 
 <section id="sold">
 <header><h2>Sales History</h2></header>
