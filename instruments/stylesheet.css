@@ -12,15 +12,18 @@ body { background: hsla(180, 2%, 19%, 1); color: hsla(0, 0%, 100%, 0.88); margin
 
 #prices { text-align: center; }
 #amplifiers, #parts { overflow:hidden; }
-#guitars.solo    article { margin: auto; transform:scale(0.93) rotate(+2deg);}
-#amplifiers.solo article { margin: auto; transform:scale(0.93) rotate(-2deg);}
+
+
+body.landscape #guitars.solo    article { margin: auto; transform:scale(0.93) rotate(+2deg);}
+body.landscape #amplifiers.solo article { margin: auto; transform:scale(0.93) rotate(-2deg);}
+
+
 #parts { padding: 25px 0; }
 #parts article { float:left; }
 body.landscape #parts article { width: 33.3%; }
 
-body.portrait  #guitars.solo article { width: 88%; }
+body.portrait  #guitars.solo article { width: 100%; }
 body.landscape #guitars.solo article { width: 66%;  }
-
 
 body.portrait  #amplifiers.solo article { width: 88%; }
 body.landscape #amplifiers.solo article { width: 50%;  }
@@ -31,6 +34,7 @@ body.landscape #amplifiers.solo article { width: 50%;  }
 
 body > article { max-width: 1400px; margin: auto; }
 body > article > header { text-align: center; padding: 0 25px 25px;}
+body > article > header div { opacity: 0.5; }
 body > article #summary pre a[href] {color:hsl(50,88%,72%); text-decoration:underline;}
 
 /* Article Advertisement */
@@ -130,3 +134,8 @@ body:not(.root) > header:hover .slogan { margin-top: 0px; opacity:0.5; color:inh
 figure { overflow:hidden; position: relative; display:block; margin:auto; }
 figure > img { position: relative; display: block; width:100%; float:left; }
 figure.duo > img { width:50%; }
+
+
+.remote.attributes { background: white; color: black; font-size: 10px; line-height:12.5px; padding: 25px; border-bottom: 1px solid black; }
+.remote.attributes header { margin-bottom: 25px; }
+.remote.attributes pre { font:inherit; margin: auto; max-width: none; padding: 0; margin-top: 25px;}
