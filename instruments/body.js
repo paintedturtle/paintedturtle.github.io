@@ -2,16 +2,16 @@
 (function() {
   var renderBody;
 
-  document.on("DOMContentLoaded", function() {
-    return renderBody();
-  });
-
   window.on("resize", function() {
     return renderBody();
   });
 
+  document.on("DOMContentLoaded", function() {
+    return renderBody();
+  });
+
   renderBody = function() {
-    document.body.classList.toggle("square", window.innerHeight === window.innerWidth);
+    document.body.classList.toggle("portrait", window.innerHeight === window.innerWidth);
     document.body.classList.toggle("portrait", window.innerHeight > window.innerWidth);
     document.body.classList.toggle("landscape", window.innerHeight < window.innerWidth);
     return document.body.classList.toggle("initialized", true);
