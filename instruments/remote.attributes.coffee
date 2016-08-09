@@ -62,11 +62,12 @@ renderTextForReverb = ->
   paragraphs = pre.innerText.split("\n\n")
   paragraphs = paragraphs.map (paragraph) -> paragraph.trim()
   paragraphs = addModelAndSerialNumberTo(paragraphs)
+  paragraphs = addCashSavingsTo(paragraphs)
   paragraphs = addLocationInformationTo(paragraphs)
   paragraphs.join("\n\n")
 
 Location_Information = """
-  We are located in the Little Italy area of Ottawa and we are usually available on weekday afternoons and evenings — let us know what might work best for you and we will get back to you shortly.
+  We are located in the Little Italy area of Ottawa and we are usually available on weekday afternoons and evenings – let us know what might work best for you and we will get back to you shortly.
 """
 
 Name_And_Address = """
@@ -85,6 +86,15 @@ addModelAndSerialNumberTo = (paragraphs) ->
   if preamble.length
     preamble = [preamble.join("\n")]
   preamble.concat(paragraphs)
+
+addCashSavingsTo = (paragraphs, output=[]) ->
+  indexOfContactInfo = paragraphs.findIndex (paragraph) -> /Send us a message/.test(paragraph)
+  if paragraphs[indexOfContactInfo]
+    output = output.concat(paragraphs[0...indexOfContactInfo])
+    output = output.concat(["Save $1 if you pay with cash instead of purchasing through Reverb."])
+    output = output.concat(paragraphs[indexOfContactInfo...paragraphs.length])
+  else
+    output = output.concat(paragraphs)
 
 addLocationInformationTo = (paragraphs) ->
   output = [].concat(paragraphs)
