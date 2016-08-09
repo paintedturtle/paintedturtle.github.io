@@ -55,7 +55,7 @@
   };
 
   renderTitleForReverb = function() {
-    return document.pull("title").innerText.split("$")[0] + ", Canada 🐢";
+    return document.pull("title").innerText.split("$")[0].trim() + ", Canada 🐢";
   };
 
   renderTextForReverb = function() {

@@ -55,7 +55,7 @@ renderReverbAttributes = ->
   document.body.appendChild(element)
 
 renderTitleForReverb = ->
-  document.pull("title").innerText.split("$")[0] + ", Canada 🐢"
+  document.pull("title").innerText.split("$")[0].trim() + ", Canada 🐢"
 
 renderTextForReverb = ->
   pre = document.pull("article #summary pre")
