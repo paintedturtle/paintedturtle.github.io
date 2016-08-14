@@ -67,12 +67,12 @@ renderTextForReverb = ->
   paragraphs.join("\n\n")
 
 Location_Information = """
-  We are located in the Little Italy area of Ottawa and we are usually available on weekday afternoons and evenings – let us know what might work best for you and we will get back to you shortly.
+  We are located in the Little Italy area of Ottawa and we are usually available on weekday afternoons and evenings. Let us know what might work best for you and we will get back to you shortly.
 """
 
 Name_And_Address = """
-    Painted Turtle Instruments
-    https://paintedturtle.xyz/instruments
+  Painted Turtle Instruments
+  https://paintedturtle.xyz/instruments
   """
 
 addModelAndSerialNumberTo = (paragraphs) ->
